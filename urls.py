@@ -25,7 +25,7 @@ genre_urls.update(
         ],
         "science": [
             "https://www.youtube.com/watch?v=CHjVz6nHh7Y",
-            "https://www.youtube.com/watch?v=SGTZPoZo66M&list=PLLHAUHF-RPhlA7mxLd1ssJrL_Ner655UU&index=119",
+            "https://www.youtube.com/watch?v=SGTZPoZo66M",
             "https://www.youtube.com/watch?v=qd25SMtKJww", 
             "https://www.youtube.com/watch?v=S3R-rP8dawM", 
             "https://www.youtube.com/watch?v=O55mvoZbz4Y"
