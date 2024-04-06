@@ -30,7 +30,7 @@ Use your package manager to install ffmpeg (differs distro to distro).
 # Installing the Python `yt-dlp` Package
 Assuming you have Python installed on your OS, open a terminal in this directory and run:
 ```
-pip install requirements.txt
+pip install -r requirements.txt
 ```
 This will automatically download the Python package required.
 
