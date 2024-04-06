@@ -27,3 +27,6 @@ dist-ssr
 **/*.mp3
 **/*.webm
 **/*.part
+
+# Python
+__pycache__
