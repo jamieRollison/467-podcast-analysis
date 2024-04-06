@@ -15,7 +15,7 @@ You're gonna need `ffmpeg` to acquire the dataset.
 Download [this MSI installer](https://github.com/icedterminal/ffmpeg-installer/releases/download/6.1.1.20240201/FFmpeg_Essentials.msi),
 it may complain about viruses, but rest assured there are none.
 
-### OSX with Homebrew
+### Mac OSX with Homebrew
 Run this command:
 ```
 brew install ffmpeg
