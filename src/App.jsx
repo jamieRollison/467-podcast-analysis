@@ -152,7 +152,7 @@ function App() {
         </div>
       </div>
 
-      <div className="flex justify-between pr-10">
+      <div className="flex justify-between pr-10 mt-10">
         <div>
           <h1 className="text-xl font-bold">
             {`Differences in ${detailsCategory === "pitch" ? "Pitch" : "Volume"} in Popular Episodes of ${genre_name_map[detail_genre]} Podcasts`}
