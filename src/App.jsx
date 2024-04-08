@@ -181,7 +181,9 @@ function App() {
                 position="insideBottom"
               />
             </XAxis>
-            <Tooltip />
+            <Tooltip
+              formatter={(value, name) => [value, name.slice(0, 10) + "..."]}
+            />
             {active_episodes.map((podcast, idx) => {
               return (
                 <Line
