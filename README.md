@@ -1,10 +1,10 @@
-CS467 Design 4 Implementation - Podcast Audio Analysis across Genres
+# CS467 Design 4 Implementation - Podcast Audio Analysis across Genres
 Team Members:
+- Anami Patel
+- Melanie Seay
+- Jamie Rollison
+- Upanshu Parekh
 
-Anami Patel
-Jamie Rollison
-Melanie Seay
-Upanshu Parekh
 To run, open https://467-podcast-analysis.vercel.app/ in a web browser!
 
 <!-- # React + Vite
