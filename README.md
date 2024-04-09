@@ -1,3 +1,12 @@
+CS467 Design 4 Implementation - Podcast Audio Analysis across Genres
+Team Members:
+
+Anami Patel
+Jamie Rollison
+Melanie Seay
+Upanshu Parekh
+To run, open https://467-podcast-analysis.vercel.app/ in a web browser!
+
 <!-- # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -33,6 +42,9 @@ Assuming you have Python installed on your OS, open a terminal in this directory
 `pip install -r data_processing/requirements.txt`
 ```
 This will automatically download the Python package required.
+
+
+
 
 # Downloading the Data
 Open a terminal in this directory and run:
