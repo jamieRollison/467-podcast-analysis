@@ -1,4 +1,4 @@
-# CS467 Design 4 Implementation - Podcast Audio Analysis across Genres
+# CS467 Design 4 Implementation - Podcast Audio Analysis Across Genres
 Team Members:
 - Anami Patel
 - Melanie Seay
