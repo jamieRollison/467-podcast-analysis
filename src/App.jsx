@@ -3,6 +3,7 @@ import "./App.css";
 import * as data_module from "./data/all_data_lists.json";
 import * as averages_module from "./data/averages_list.json";
 import * as podcast_name_lists from "./data/name_lists.json";
+import * as timeless_averages_module from "./data/avg_over_time.json";
 import {
   LineChart,
   Line,
@@ -12,6 +13,8 @@ import {
   Legend,
   Tooltip,
   Label,
+  BarChart,
+  Bar,
 } from "recharts";
 
 function App() {
@@ -19,6 +22,7 @@ function App() {
   const averages = averages_module.default;
   console.log(data);
   const podcast_names = podcast_name_lists.default;
+  const timeless_averages = timeless_averages_module.default;
 
   const [overviewCategory, setOverviewCategory] = useState("pitch");
   const [detailsCategory, setDetailsCategory] = useState("pitch");
@@ -57,10 +61,43 @@ function App() {
 
   return (
     <>
+      <div className="flex flex-col justify-start items-center">
+        <h1 className="text-xl font-bold">
+          {`Differences in Pitch and Volume by Podcast Genre`}
+        </h1>
+        <BarChart
+          width={800}
+          height={400}
+          data={timeless_averages}
+          margin={{ top: 5, right: 30, left: 20, bottom: 10 }}
+          title="Differences in Pitch and Volume by Podcast Genre"
+        >
+          <Legend style={{ marginTop: 10 }} />
+          <CartesianGrid strokeDasharray="3 3" />
+          <YAxis yAxisId="left">
+            <Label value={"Pitch (Hz)"} angle={-90} position="insideLeft" />
+          </YAxis>
+          <YAxis yAxisId="right" orientation="right">
+            <Label
+              value={"Volume (RMS)"}
+              angle={-90}
+              offset={-10}
+              position="insideRight"
+            />
+          </YAxis>
+          <XAxis dataKey="genre">
+            <Label value="Genre" offset={-5} position="insideBottom" />
+          </XAxis>
+          <Tooltip />
+          <Bar yAxisId="left" dataKey={"pitch"} fill="#8884d8" />
+          <Bar yAxisId="right" dataKey={"volume"} fill="#9467bd" />
+        </BarChart>
+      </div>
+
       <div className="flex justify-between pr-10">
         <div>
           <h1 className="text-xl font-bold">
-            {`Differences in ${overviewCategory === "pitch" ? "Pitch" : "Volume"} by Podcast Genre`}
+            {`Differences in ${overviewCategory === "pitch" ? "Pitch" : "Volume"} by Podcast Genre Over Time`}
           </h1>
           <LineChart
             width={800}
